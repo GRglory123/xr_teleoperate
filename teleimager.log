@@ -1,0 +1,63 @@
+nohup: ignoring input
+09:49:29.968411 INFO                                        image_server.py:1591
+                         ====================== Image                           
+                         Server Startup Guide                                   
+                         ======================                                 
+                         Please first read this repo's                          
+                         README.md to learn how to                              
+                         configure and use the teleimager.                      
+                         To discover connected cameras, run                     
+                         the following command:                                 
+                                                                                
+                             teleimager-server --cf                             
+                                                                                
+                         The '--cf' flag means 'camera                          
+                         find'.                                                 
+                         This will list all detected                            
+                         cameras and their details (video                       
+                         paths, serial numbers and physical                     
+                         path etc.).                                            
+                         Use that information to fill in                        
+                         your 'cam_config_server.yaml'                          
+                         file.                                                  
+                         Once configured, you can start the                     
+                         image server with:                                     
+                                                                                
+                             teleimager-server                                  
+                                                                                
+                         Note:                                                  
+                          - If you have RealSense cameras,                      
+                         add the '--rs' flag to enable                          
+                         RealSense support.                                     
+                          - Make sure you have proper                           
+                         permissions to access the camera                       
+                         devices (e.g., run with sudo or                        
+                         set udev rules).                                       
+                         ==================================                     
+                         ==================================                     
+                         ======                                                 
+09:49:29.987455 INFO     [Performance] CPU Affinity locked  image_server.py:1570
+                         to: [0, 1, 2]                                          
+09:49:29.995811 INFO     [WebRTC] bitrate                     image_server.py:94
+                         min/default/max=2000000/5000000/1200                   
+                         0000, gop=60                                           
+09:49:32.487769 INFO     UVC driver reloaded successfully.   image_server.py:622
+09:49:37.118665 INFO     [Responser] Camera Config Responser image_client.py:636
+                         initialized at 0.0.0.0:60000                           
+09:49:37.943751 INFO     [RealSenseCamera: head_camera]     image_server.py:1010
+                         initialized with 480x640 @ 30 FPS.                     
+                         ZMQ: enabled, zmq_port=55555;                          
+                         WebRTC: enabled, webrtc_port=60001                     
+09:49:37.944229 INFO     [Image Server] Image server has    image_server.py:1413
+                         started, waiting for client                            
+                         connections...                                         
+09:49:38.166780 INFO     [Image Server] head_camera is      image_server.py:1536
+                         ready.                                                 
+09:49:38.170221 INFO     [Image Server] Running... Press    image_server.py:1642
+                         Ctrl+C to exit.                                        
+09:53:27.603463 INFO     [WebRTC] Preferred H264 for         image_server.py:446
+                         port:60001                                             
+10:10:45.299881 INFO     [WebRTC] Preferred H264 for         image_server.py:446
+                         port:60001                                             
+10:17:59.338086 INFO     [WebRTC] Preferred H264 for         image_server.py:446
+                         port:60001                                             
